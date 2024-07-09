@@ -25,10 +25,10 @@ function WeatherCard({ main, weather, wind, dt_txt }) {
   const formattedDate = formatToLongDate(dt_txt);
 
   return (
-    <div className="mx-[10%] my-20 p-10 rounded-2xl bg-gray-300 shadow-2xl">
+    <div className="mx-[10%] my-20 p-6 rounded-2xl bg-gray-300 shadow-2xl">
       <div className="flex flex-row justify-between max-sm:flex-col max-sm:items-center">
         <div className="flex flex-col justify-between items-center">
-          <div>
+          <div className="flex flex-col items-center">
             <div>{formattedDate}</div>
             <div>
               <img
